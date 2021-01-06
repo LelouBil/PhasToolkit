@@ -77,7 +77,7 @@ namespace PhasToolkit
 
                 //MelonLogger.Log($"Current count: {cur} Maximum: {max} Player count: {nb}");
                 if (nb < remain || remain <= 0) continue;
-                FileBasedPrefs.SetInt(keyConfig, nb - remain);
+                //FileBasedPrefs.SetInt(keyConfig, nb - remain);
                 MelonCoroutines.Start(AddNumberOf(inventoryItem, remain));
             }
 
